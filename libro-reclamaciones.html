@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Macondo&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Macondo', cursive; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Bodoni Moda', serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Plus Jakarta Sans', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Concert One', cursive; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Babylonica', cursive; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ruthie&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Ruthie', cursive; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Italianno', cursive; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Cormorant Garamond', serif; -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cormorant+Garamond&family=Graduate&family=Lemonada&family=Megrim&family=Nixie+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Bad Script', cursive;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Graduate', cursive;
+    font-family: 'Lemonada', cursive;
+    font-family: 'Megrim', cursive;
+    font-family: 'Nixie One', cursive; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Buda&family=Hurricane&family=Moon+Dance&family=Paprika&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Buda', cursive;
+        font-family: 'Hurricane', cursive;
+        font-family: 'Moon Dance', cursive;
+        font-family: 'Paprika', cursive; -->
+
+    <script
+      src="https://kit.fontawesome.com/207e3e1aa3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Libro de reclamaciones - Mamalú</title>
+    <script defer src="js.js"></script>
+  </head>
+  <body class="bg-beige">
+    <div class="container">
+      <h1 class="text-center pt-5 pb-2 ff-0 display-1 text-marron-claro">Libro de reclamaciones</h1>
+      <form action="http://localhost/po/libro-reclamaciones.php" class="bg-beige p-4 text-dark" method="post">
+        <h5 class="p-3  bg-humo text-dark-bajo">1. IDENTIFICACIÓN DEL CONSUMIDOR RECLAMANTE(*):</h5>
+        <div class="row ps-3 pe-3 mb-3">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <label for="fecha-incidente3" class="form-label"
+              >Fecha del incidente <b class="text-danger fs-6">(*)</b></label
+            >
+            <input
+              type="date"
+              class="form-control"
+              id="fecha-incidente3"
+              placeholder="Example input placeholder"
+              name="fecha-incidente3"
+            />
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <label for="nombres3" class="form-label"
+              >Nombres <b class="text-danger fs-6">(*)</b></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="nombres3"
+              id="nombres3"
+              required
+            />
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <label for="apellidos3" class="form-label"
+              >Apellidos <b class="text-danger fs-6">(*)</b></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="apellidos3"
+              id="apellidos3"
+              required
+            />
+          </div>
+        </div>
+        <div class="row ps-3 pe-3 mb-3">
+          <div class="col-lg-7 col-md-12 col-sm-12">
+            <label for="correo3" class="form-label"
+              >Correo electrónico <b class="text-danger fs-6">(*)</b></label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="correo3"
+              aria-describedby="emailHelp"
+              name="correo3"
+              required
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <label for="telefono3" class="form-label"
+              >Teléfono <b class="text-danger fs-6">(*)</b></label
+            >
+            <input
+              type="number"
+              class="form-control"
+              name="telefono3"
+              id="telefono3"
+              required
+            />
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12">
+            <label for="edad3" class="form-label"
+              >Edad <b class="text-danger fs-6">(*)</b></label
+            >
+            <input
+              type="number"
+              class="form-control"
+              name="edad3"
+              id="edad3"
+              required
+            />
+          </div>
+        </div>
+        <div class="row ps-3 pe-3 mb-3">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <label for="tipo-documento3" class="form-label"
+              >Tipo de documento <b class="text-danger fs-6">(*)</b></b
+            ></label>
+            <select
+              class="form-select"
+              aria-label="Default select example "
+              name="tipo-documento3"
+            >
+              <option selected>Seleccione una opción</option>
+              <option value="DNI">DNI</option>
+              <option value="C.E.">C.E.</option>
+            </select>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <label for="num-documento3" class="form-label"
+              >N° documento <b class="text-danger fs-6">(*)</b></label
+            >
+            <input
+              type="number"
+              class="form-control"
+              name="num-documento3"
+              id="num-documento3"
+              required
+            />
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <label for="direccion3" class="form-label"
+              >Dirección domiciliaria <b class="text-danger fs-6">(*)</b></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="direccion3"
+              id="direccion3"
+              
+            />
+          </div>
+        </div>
+        <div class="row ps-3 pe-3 mb-3">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <label for="departamento3" class="form-label"
+              >Departamento</b></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="departamento3"
+              id="departamento3"
+              value="Ica"
+              readonly
+              
+            />
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <label for="provincia3" class="form-label"
+              >Provincia <b class="text-danger fs-6">(*)</b> </b
+            ></label>
+            <select
+              class="form-select"
+              aria-label="Default select example "
+              name="provincia3"
+            >
+              <option selected>Seleccione una opción</option>
+              <option value="Ica">Ica</option>
+              <option value="Chincha">Chincha</option>
+              <option value="Pisco">Pisco</option>
+            </select>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <label for="distrito3" class="form-label"
+              >Distrito</b></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="distrito3"
+              id="distrito3"
+              value="Cercado"
+              readonly
+              
+            />
+          </div>
+        </div>
+        <h5 class="p-3  bg-humo text-dark-bajo">2. IDENTIFICACIÓN DEL BIEN CONTRATADO(*):</h5>
+        <div class="row ps-3 pe-3 mb-3">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <label for="tipo-reclamo3" class="form-label"
+              >Tipo <b class="text-danger fs-6">(*)</b></b
+            ></label>
+            <select
+              class="form-select"
+              aria-label="Default select example "
+              name="tipo-reclamo3"
+            >
+              <option selected>Seleccione una opción</option>
+              <option value="Producto">Producto</option>
+              <option value="Servicio">Servicio</option>
+            </select>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <label for="monto-reclamado3" class="form-label"
+              >Monto Reclamado <b class="text-danger fs-6">(*)</b></label
+            >
+            <input
+              type="number"
+              class="form-control"
+              name="monto-reclamado3"
+              id="monto-reclamado3"
+              required
+            />
+          </div>
+          
+        </div>
+        <div class="row ps-3 pe-3 mb-3">
+          <label for="descripcion-reclamo3" class="form-label"
+              >Descripción para monto reclamado: <b class="text-danger fs-6">(*)</b>
+            </label>
+            <div class="col-12">
+              <textarea
+                class="form-control"
+                rows="3"
+                id="descripcion-reclamo3"
+                name="descripcion-reclamo3"
+                required
+              ></textarea>
+            </div>
+          
+          </div>
+
+        <h5 class="p-3  bg-humo text-dark-bajo">3.  DETALLE DE LA RECLAMACION Y PEDIDO DEL CONSUMIDOR(*):</h5>
+          <div class="row ps-3 pe-3 mb-3">
+            <div class="col-lg-4">
+              <label for="reclamacion3" class="form-label"
+              >Reclamación <b class="text-danger fs-6">(*)</b></b
+            ></label>
+            <select
+              class="form-select"
+              aria-label="Default select example "
+              name="reclamacion3"
+            >
+              <option selected>Seleccione una opción</option>
+              <option value="Reclamo">Reclamo</option>
+              <option value="Servicio">Servicio</option>
+            </select>
+            </div>
+            <div class="col-lg-4">
+              <label for="num-pedido3" class="form-label"
+              >Número de pedido <b class="text-danger fs-6">(*)</b></label
+            >
+            <input
+              type="number"
+              class="form-control"
+              name="num-pedido3"
+              id="num-pedido3"
+              required
+            />
+            </div>
+            <div class="col-lg-4">
+              <label for="fecha-pedido3" class="form-label"
+              >Fecha de Pedido: <b class="text-danger fs-6">(*)</b></label
+            >
+            <input
+              type="date"
+              class="form-control"
+              id="fecha-pedido3"
+              name="fecha-pedido3"
+              placeholder="Example input placeholder"
+            />
+            </div>
+          </div>
+          <div class="row ps-3 pe-3 mb-3">
+            <div class="col-lg-6 col-sm-12">
+                <label for="descripcion-reclamo3" class="form-label"
+              >Detalle: <b class="text-danger fs-6">(*)</b>
+            </label>
+            <div class="col-12">
+              <textarea
+                class="form-control"
+                rows="3"
+                id="descripcion-reclamo3"
+                name="descripcion-reclamo3"
+                required
+              ></textarea>
+            </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <label for="pedido-en-concreto3" class="form-label"
+              >Pedido en concreto: <b class="text-danger fs-6">(*)</b>
+            </label>
+            <div class="col-12">
+              <textarea
+                class="form-control"
+                rows="3"
+                id="pedido-en-concreto3"
+                name="pedido-en-concreto3"
+                required
+              ></textarea>
+            </div>
+            </div>
+          </div>
+
+        <h5 class="p-3  bg-humo text-dark-bajo ">4.  OBSERVACIONES Y ACCIONES ADOPTADAS POR EL PROVEEDOR(*):</h5>
+        
+          <div class="row ps-3 pe-3 mb-3">
+            <div class="col-12">
+              <label for="fecha-respuesta3" class="form-label"
+              >Fecha de comunicación de la respuesta: <b class="text-danger fs-6">(*)</b></label
+            >
+            <input
+              type="date"
+              class="form-control"
+              id="fecha-respuesta3"
+              name="fecha-respuesta3"
+              placeholder="Example input placeholder"
+            />
+            </div>
+            <div class="col-12">
+              <label for="acciones-reclamo3" class="form-label"
+              >Acciones tomadas por el Proveedor: <b class="text-danger fs-6">(*)</b>
+            </label>
+            <div class="col-12">
+              <textarea
+                class="form-control"
+                rows="3"
+                id="acciones-reclamo3"
+                name="acciones-reclamo3"
+                required
+              ></textarea>
+            </div>
+            </div>
+          </div>
+          <div class="row ps-3 pe-3 pt-3 pt-5">
+            <div class="col-lg-6 col-sm-12 pb-4">
+              <div class="d-grid gap-2">
+                <button class="btn btn-warning" type="submit">Enviar</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 pb-4">
+              <div class="d-grid gap-2">
+                <button class="btn btn-danger" type="reset">Borrar</button>
+                </div>
+            </div>
+          </div>
+        
+        </div>
+        
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

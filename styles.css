@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
+
+/* CABEZA */
+#sec-cabeza {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0, 0, 0, 0.5);
+  background-size: contain;
+}
+
+#nombre-empresa {
+  width: 20%;
+  padding: 4px 0px 0px 20px;
+  display: block;
+  clear: both;
+  float: left;
+}
+#enlaces-primarios {
+  width: 50%;
+  padding: 35px 0px 35px 50px;
+  text-align: center;
+  display: block;
+  clear: none;
+  float: left;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* ENLACES */
+
+.logo {
+  width: 60px;
+  line-height: 80px;
+  padding-top: 0;
+}
+
+#enlaces-primarios a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 15px 0px 15px;
+  opacity: 0.75;
+}
+#enlaces-primarios a:hover {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+#enlaces-primarios a:active {
+  color: rgb(109, 0, 0);
+  opacity: 1;
+}
+.social {
+  display: block;
+  clear: none;
+  float: right;
+  padding: 40px 30px 35px 0px;
+  font-size: 15px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}
+.social a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 0px 0px 12px;
+  opacity: 0.75;
+}
+.social #a1:hover {
+  color: rgb(48, 48, 204);
+}
+.social #a2:hover {
+  color: rgb(132, 78, 209);
+}
+.social #a3:hover {
+  color: rgb(76, 196, 86);
+}
+.social #a4:hover {
+  color: rgb(191, 29, 29);
+}
+/* ENLACES 2 */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 80px;
+  /* position: absolute; */
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-family: "Megrim", cursive;
+  font-size: 19px;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 17px;
+  margin: 0px 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+.nav-menu-link {
+  padding: 2px 12px;
+  border-radius: 4px;
+}
+.nav-menu-link:hover {
+  /* background-color: bisque; */
+  color: rgba(255, 128, 0, 0.881);
+  transition: 0.4s;
+}
+
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px 24px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+  }
+
+  #logo {
+    margin-top: 0px;
+    padding-top: 0;
+    width: 2px;
+  }
+  .logo {
+    padding-left: 13px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: rgb(33, 33, 33);
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 15px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.4s;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover {
+    background: none;
+    color: rgb(239, 50, 29);
+    transition: 0.4s;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav-menu_visible {
+    left: 0;
+    position: absolute;
+    z-index: 4;
+    /* para que se sobreponga */
+  }
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+/* BODY */
+
+html,
+body {
+  margin: 0;
+}
+#body-index {
+  padding-top: 0;
+}
+
+.img-index {
+  background-image: url("https://i.pinimg.com/originals/0d/48/13/0d481368c5149d6d7363e6327ee7e997.gif");
+  /* background-image: url('https://media.giphy.com/media/KxznyoCjUyOUo/giphy.gif'); */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.567)),
+    url(img/fondo\ portada\ of3.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* INDEX  ----  PORTADA */
+
+/* NOSOTROS  boo*/
+
+.portada-nosotros {
+  height: 650px;
+  text-align: center;
+}
+
+#tit-nosotros {
+  padding: 200px 0 220px 0;
+}
+.flecha-bajar {
+  color: white;
+  font-size: 40px;
+}
+.flecha-bajar:hover {
+  color: rgba(255, 128, 0, 0.881);
+  transition: 0.3s;
+}
+
+#text-historia {
+  text-align: justify;
+}
+#img-histo {
+  width: 66%;
+}
+
+.text-myv {
+  text-align: justify;
+}
+
+.img-nosotros {
+  background-image: url("https://i.pinimg.com/originals/4d/0a/d6/4d0ad6517a242ffdf0c87d620153b4bc.gif");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.336)),
+    url(img/fondo-nosotros.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+@media (max-width: 768px) {
+  .img-index {
+    background-image: url("https://i.pinimg.com/originals/b6/59/cf/b659cf98ef40c1be6f10a1185276c9a8.gif");
+    background-size: cover;
+  }
+  .img-nosotros {
+    background-image: url(img/gif-index.gif);
+  }
+  .fondo-sugerencias {
+    background-image: url("https://i.pinimg.com/originals/d4/eb/db/d4ebdbf6a223ac6ad86b422742c326f6.jpg");
+  }
+}
+
+/* PRODUCTOS */
+
+#body-productos {
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.567)),
+    url(img/fondo\ productos\ oficial.jpg);*/
+  background-color: rgb(9, 9, 9);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  padding-top: 0;
+}
+
+/* PUEDE SERVIR PARA LA EDICION ------- PRODUCTOS */
+
+/* .subtitulo {
+  padding: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+  font-size: 40px;
+}
+
+.np {
+  margin: 20px 0 20px 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.t-i {
+  margin: 20px 20px 40px 20px;
+  font-family: "Roboto", sans-serif;
+}
+.i {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+} */
+
+/* CARDS AYUDA BOOTSTRAP*/
+.productos1 .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.container .card {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 25px;
+  text-align: center;
+  transition: all 0.25s;
+  color: rgb(0, 0, 0);
+  background-color: rgb(212, 212, 212);
+}
+.container .card:hover {
+  /* transform: translateY(-15px); */
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: rgb(46, 46, 46);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/* FIN DE CARDS */
+
+/* SUCURSALES */
+#body-sucursales {
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.567)),
+    url(img/fondo-sucursales.jpg);*/
+  background-color: rgb(9, 9, 9);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  padding-top: 0;
+}
+
+/* RESERVACIONES */
+.reservas {
+  background-color: #eeeeee;
+}
+#tit-reservaciones {
+  font-size: 70px;
+  text-align: center;
+  padding: 45px 0 25px 0;
+  color: rgb(99, 0, 0);
+  font-family: "Italianno", cursive;
+}
+#text-reservaciones {
+  padding: 35px 20% 45px 20%;
+  text-align: justify;
+  color: rgb(65, 65, 65);
+}
+.botonreserva {
+  padding: 25px 0 75px 0;
+}
+.btn-outline-danger {
+  color: rgb(99, 0, 0);
+  border-color: rgb(99, 0, 0);
+}
+.btn-outline-danger:hover {
+  background-color: rgb(99, 0, 0);
+  border-color: rgb(99, 0, 0);
+  color: white;
+  transition: 0.4s;
+}
+
+/* -------- */
+/* UBICACION */
+/* -------- */
+#ubicacion {
+  background-color: rgb(255, 255, 255);
+}
+/* PT1 */
+#ubicacion-p1 {
+  width: 100%;
+}
+#tit-ubicanos h2 {
+  font-family: "Italianno", cursive;
+  padding: 20px 0 0px 0;
+  font-size: 70px;
+  text-align: center;
+  color: rgb(99, 0, 0);
+}
+#text-ubicanos {
+  padding: 5px 20px 30px 20px;
+  text-align: justify;
+  text-align: center;
+  color: rgb(65, 65, 65);
+}
+
+/* PT2 */
+#ubicacion-p2 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#mapa-inicio {
+  width: 80%;
+  height: 400px;
+  text-align: center;
+}
+.iframe {
+  text-align: center;
+}
+.iframe2 {
+  text-align: center;
+  right: 0;
+}
+
+#boos {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .mapita {
+    width: 100%;
+  }
+  .pdp {
+    text-align: center;
+  }
+}
+.portada-inicio {
+  height: 610px;
+  text-align: center;
+}
+
+#tit-inicio {
+  padding: 180px 0 20px 0;
+}
+
+#text-portada-inicio {
+  padding-bottom: 140px;
+}
+
+.img-bienvenidos {
+  width: 80%;
+}
+.text-bienvenidos {
+  text-align: justify;
+}
+
+.tamaño-completo {
+  width: 100%;
+}
+.btn-orange {
+  background-color: rgba(255, 128, 0, 0.881);
+}
+.btn-red {
+  background-color: rgba(175, 0, 0, 0.881);
+}
+.btn-celeste {
+  background-color: rgba(0, 140, 255, 0.881);
+}
+.naranja:hover {
+  background-color: rgba(175, 0, 0, 0.881);
+}
+.celeste:hover {
+  background-color: rgba(0, 140, 255, 0.881);
+}
+/* COLOR DE FONDOS */
+.bg-tierra {
+  background-color: rgb(255, 243, 230);
+}
+.bg-nav-oscuro {
+  background-color: rgba(0, 0, 0, 0.558);
+}
+.bg-humo {
+  background-color: rgb(181, 181, 181);
+}
+.bg-beige {
+  background-color: rgb(255, 248, 239);
+}
+
+/* COLOR DE LETRA */
+.text-morado {
+  color: rgb(79, 0, 79);
+}
+.text-naranja-original {
+  color: rgba(255, 128, 0, 0.881);
+}
+.text-naranja {
+  color: rgba(208, 104, 0, 0.812);
+}
+.text-naranja-medio {
+  color: rgb(220, 117, 0);
+}
+.text-naranja-medio-1 {
+  color: rgb(197, 105, 0);
+}
+.text-naranja-bajo {
+  color: rgb(136, 72, 0);
+}
+.text-beige {
+  color: rgb(255, 224, 188);
+}
+.text-humo {
+  color: rgb(89, 89, 89);
+}
+.text-marron {
+  color: #662500;
+}
+.text-marron-claro {
+  color: #943400;
+}
+.text-dark-bajo {
+  color: rgb(70, 70, 70);
+}
+/* FUENTES DE LETRAS */
+.ff-0 {
+  font-family: "Italianno", cursive;
+}
+
+.ff-1 {
+  font-family: "Nixie One", cursive;
+}
+
+.ff-2 {
+  font-family: "Megrim", cursive;
+  /* para el menú */
+}
+.ff-3 {
+  font-family: "Cormorant Garamond", serif;
+}
+.ff-4 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.ff-5 {
+  font-family: "Bodoni Moda", serif;
+}
+.ff-6 {
+  font-family: "Macondo", cursive;
+}
+
+
+/* TAMAÑOS DE LETRA */
+
+.fs-10 {
+  font-size: 80px;
+}
+.logo-ppd {
+  width: 55%;
+}
+
+/* OTRAS EDICIONES */
+.text-justify {
+  text-align: justify;
+}
+.enlace-pdp {
+  text-decoration: none;
+}
+.enlaces-sin-estilo {
+  list-style: none;
+}
+.form-borde {
+  border: 1px solid rgb(210, 0, 0);
+}
+
+.color-blanco {
+  color: #eeeeee;
+  background-color: rgba(153, 153, 153, 0.264);
+  border-width: 0;
+  border-style: none;
+}
+.color-blanco:hover {
+  color: none;
+  background-color: rgba(153, 153, 153, 0.264);
+  border-width: 0;
+  border-style: none;
+}
+
+.fondo-sugerencias {
+  background-image: url("https://www.rlmedia.io/is/image/Polo/RLL60966L?$itemlevel$");
+}
+
+
+@media (max-width: 768px) {
+  .img-index {
+    background-image: url("https://i.pinimg.com/originals/b6/59/cf/b659cf98ef40c1be6f10a1185276c9a8.gif");
+    background-size: cover;
+  }
+  .img-nosotros {
+    background-image: url(img/gif-index.gif);
+  }
+  .fondo-sugerencias {
+    background-image: url("https://i.pinimg.com/originals/d4/eb/db/d4ebdbf6a223ac6ad86b422742c326f6.jpg");
+  }
+  .logo-mamalu {
+    margin-right: 0;
+  }
+  .titulo-centro{
+    text-align: center;
+  }
+  #titulo-bienvenidos, #subtitulo-bienvenido{
+    text-align: center;
+  }
+}
+
+.border-color {
+  /* BORDE DE CARDS */
+  border-color: black;
+}
+/* ENLACES */
+.hover:hover{
+  color: black;
+}
+.hover:hover{
+  color:hsl(35%, 78%, 63%);
+}
